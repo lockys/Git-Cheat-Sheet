@@ -1,55 +1,55 @@
-Git Cheat Sheet English
+Git Cheat Sheet Traditional Chinese
 ===============
 
 
 ###目錄
-* [Create](#create)
-* [Local Changes](#local-changes)
-* [Search](#search)
-* [Commit History](#commit-history)
-* [Branches & Tags](#branches--tags)
-* [Update & Publish](#update--publish)
-* [Merge & Rebase](#merge--rebase)
-* [Undo](#undo)
-* [Sync](#sync)
+* [建立](#建立)
+* [本地端變更](#本地端-變更)
+* [搜尋](#搜尋)
+* [送交歷史記錄](#送交-歷史紀錄)
+* [分支 & 標籤](#分支--標籤)
+* [更新 & 發布](#更新--發布)
+* [合併 & Rebase(中文翻作衍合)](#合併--衍合)
+* [撤銷](#撤銷)
+* [同步](#同步)
 
 <hr>
-###Create
+###建立
 
-Clone an existing repository:
+如何複製一個現成的程式庫(repository):
 ```
 $ git clone ssh://user@domain.com/repo.git
 ```
 
-Create a new local repository:
+在本地端建立一個程式庫，並由 git 所管理
 ```
 $ git init
 ```
 
 <hr>
-###Local Changes
+###本地端的變更
 
-Changed files in your working directory:
+查看在你的工作目錄下，有哪些檔案被做修改，或其他變更
 ```
 $ git status
 ```
 
-Changes to tracked files:
+查看上一次 commit (送交) 的版本與現在工作目錄下檔案的不同
 ```
 $ git diff
 ```
 
-Add all current changes to the next commit:
+把現在所有的變更送至 staging area 中。
 ```
 $ git add
 ```
 
-Add some changes in &lt;file&gt; to the next commit:
+只將對 &lt;file&gt; 的變更送至 staging area 中:
 ```
 $ git add -p <file>
 ```
 
-Commit all local changes in tracked files:
+將所有於 staging area 中的檔案送交 repository(程式庫):
 ```
 $ git commit -a
 ```
